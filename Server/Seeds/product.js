@@ -1,0 +1,22 @@
+﻿module.exports = [
+    {"_id":"665f7f8dfc13ae4a80b09c7f","name":"libero quis","price":3,"availableQuantity":4},
+    {"_id":"665f7f8dfc13ae4a80b09c80","name":"fusce consequat","price":3,"availableQuantity":34},
+    {"_id":"665f7f8dfc13ae4a80b09c81","name":"in felis","price":12,"availableQuantity":38},
+    {"_id":"665f7f8dfc13ae4a80b09c82","name":"lorem vitae mattis","price":28,"availableQuantity":34},
+    {"_id":"665f7f8dfc13ae4a80b09c83","name":"tortor id","price":37,"availableQuantity":1},
+    {"_id":"665f7f8dfc13ae4a80b09c84","name":"semper","price":48,"availableQuantity":26},
+    {"_id":"665f7f8dfc13ae4a80b09c85","name":"luctus ultricies eu","price":9,"availableQuantity":11},
+    {"_id":"665f7f8dfc13ae4a80b09c86","name":"rutrum nulla","price":17,"availableQuantity":39},
+    {"_id":"665f7f8dfc13ae4a80b09c87","name":"ullamcorper","price":42,"availableQuantity":5},
+    {"_id":"665f7f8dfc13ae4a80b09c88","name":"cubilia curae mauris","price":36,"availableQuantity":30},
+    {"_id":"665f7f8dfc13ae4a80b09c89","name":"ut","price":5,"availableQuantity":9},
+    {"_id":"665f7f8dfc13ae4a80b09c8a","name":"est","price":49,"availableQuantity":38},
+    {"_id":"665f7f8dfc13ae4a80b09c8b","name":"diam neque","price":20,"availableQuantity":14},
+    {"_id":"665f7f8dfc13ae4a80b09c8c","name":"quam suspendisse potenti","price":50,"availableQuantity":33},
+    {"_id":"665f7f8dfc13ae4a80b09c8d","name":"augue","price":8,"availableQuantity":15},
+    {"_id":"665f7f8dfc13ae4a80b09c8e","name":"commodo vulputate","price":18,"availableQuantity":29},
+    {"_id":"665f7f8dfc13ae4a80b09c8f","name":"felis ut","price":39,"availableQuantity":17},
+    {"_id":"665f7f8dfc13ae4a80b09c90","name":"elit proin interdum","price":18,"availableQuantity":4},
+    {"_id":"665f7f8dfc13ae4a80b09c91","name":"imperdiet","price":7,"availableQuantity":15},
+    {"_id":"665f7f8dfc13ae4a80b09c92","name":"sed justo","price":48,"availableQuantity":28}
+]
