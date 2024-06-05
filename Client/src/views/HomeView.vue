@@ -1,9 +1,18 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+  import ProductsList from "@/components/ProductsList.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="text-center">liste</h1>
+      </div>
+      <div class="col-md-6">
+        <h1 class="text-center">Produits</h1>
+        <ProductsList/>
+      </div>
+    </div>
+
   </main>
 </template>
