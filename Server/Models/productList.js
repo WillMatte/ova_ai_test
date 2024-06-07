@@ -8,16 +8,6 @@ const productListSchema = new Schema(
             ref: 'ReservedProduct',
             required: true
         }],
-        totalPrice : {
-            type: Number,
-            required: [true, "The product list needs to have a total price"],
-            validate: {
-                validator: function (value) {
-                    return value > 0
-                },
-                message : "The total price can't be under 0"
-            }
-        }
     },
     {timestamps : true}
 );

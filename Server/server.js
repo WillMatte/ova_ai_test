@@ -1,4 +1,6 @@
 ﻿const express = require('express');
+const cors = require('cors')
+const bodyPaser = require('body-parser')
 const mongoose = require("mongoose");
 const app = express();
 const port = 3000;
@@ -6,9 +8,14 @@ const mongo_url = "mongodb://127.0.0.1:27017/test_ova"
 
 
 const productRoutes = require("./Routes/productRoutes");
-const dbRoutes = require("./Routes/dbRoutes")
+const dbRoutes = require("./Routes/dbRoutes");
+const productListRoutes = require('./Routes/productListRoutes');
 
-app.get('/', (req, res) => {
+const ProductList = require('./Models/productList')
+
+app.get('/',async (req, res) => {
+    const productList = new ProductList();
+    await productList.save();
     res.send('Hello World!');
 });
 
@@ -20,9 +27,11 @@ app.use((req, res, next) => {
     );
     next();
 });
-
+app.use(cors());
+app.use(bodyPaser.json());
 app.use(productRoutes);
 app.use(dbRoutes);
+app.use(productListRoutes);
 
 app.use((error, req, res, next) => {
     console.log("Error : ", error);
@@ -36,7 +45,7 @@ mongoose
     .connect(mongo_url, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         app.listen(port, () => {
-            console.log('Node.js est à l\'écoute sur le port %s ', port);
+            console.log('Node.js is listening on port %s ', port);
         });
     })
     .catch((err) =>{
